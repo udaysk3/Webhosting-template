@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <header>
+          <a href="#" class="logo"><img src="images\logo.svg" alt=""></a>
+      
+          <nav>
+              <a href="#" class="hide-desktop"><img src="images\ham.svg" id="menu" alt="ham"></a>
+              <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit-btn hide-desktop">
+                    <img src="images/exit.svg" alt="exit menu">
+                </li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">services</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  
+              </ul>
+            </div>
+          </nav>
+        </header>
+          <section class="container">
+          
+            <img src="images\server.svg" class="server" alt="logo">
+            </div>
+        <h1>Web Hosting for the Modern Era by UdaySk</h1>
+        <p id="subhead">Go serverless and no need to pay anything</p>
+    
+        </section>
+        <div class="scroll container hide-mobile">
+            <img src="images\scroll.svg" alt="scroll">
+        </div>
+       <section class="blue-bg">
+           <div class="container">
+                <ul>
+            <li><img src="images\icon-1.svg" alt="icon">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex ipsa repudiandae ratione earum expedita maiores voluptatem ad dolorem tempore provident, quidem modi fugiat in odit quam alias autem cumque!</p>  
+            </li>
+            <li><img src="images\icon-2.svg" alt="icon">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dicta iste pariatur vero excepturi magnam, aut harum maxime iusto totam aspernatur odit facilis quod necessitatibus a blanditiis ipsum doloremque sed!</p></li>
+           <li> <img src="images\icon-3.svg" alt="icon">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta id, magni laborum doloremque officia tempore porro, adipisci quibusdam veritatis repellendus dicta perspiciatis aperiam cum unde ea distinctio ipsam voluptas!</p></li>
+        </ul>
+           </div>
+         
+       </section>
+       <section class="grey-bg">
+           <div class="container">
+               <ul>
+                 <li>
+                      <figure><img src="images\user1.png" alt="user picture">
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis consequatur distinctio vitae exercitationem dignissimos ipsam porro, nam cupiditate accusantium architecto aut molestiae alias earum, ullam autem! Sapiente, temporibus deleniti?</blockquote>
+              <figcaption>-jonny</figcaption>
+            </figure>
+            </li>
+            <li>
+                <figure><img src="images\user2.png" alt="user picture">
+          <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis consequatur distinctio vitae exercitationem dignissimos ipsam porro, nam cupiditate accusantium architecto aut molestiae alias earum, ullam autem! Sapiente, temporibus deleniti?</blockquote>
+        <figcaption>-sins</figcaption>
+      </figure>
+      </li>
+            
+               </ul>
+           </div>
+       </section>
+       <div class="container">
+           <h2>Start your Free trail now</h2>
+           <a href="#" class="cta">Get Started</a>
+       </div>
+        <footer class="black">
+            <div class="container">
+            <h3>Usk production</h3>
+            <p id="contact-info">Vizianagaram <br>INDIA</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Feedback</a></li>
+
+            </ul>
+        </div>
+        </footer>
+
+    </div>
+    <script>
+    let menu = document.getElementById('menu');
+
+    let nav = document.getElementById('nav');
+
+    let exit = document.getElementById('exit');
+  
+     menu.addEventListener('click', function(c)
+     {
+     nav.classList.toggle('hide-mobile');
+     c.preventDefault();
+     }
+     );
+     exit.addEventListener('click', function(u){
+         nav.classList.toggle('hide-mobile');
+         u.preventDefault();
+     }
+     );
+     
+
+
+
+
+    </script>
+</body>
+</html>

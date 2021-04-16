@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body{
+    margin: 0px;
+
+    font-family: 'Montserrat', sans-serif;
+    
+}
+p, blockquote{
+    font-size: 1.0em;
+    line-height: 1.2em;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+   
+    padding: 0.9em 1.2em;
+
+}
+.hide-mobile{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 130px;
+   
+}
+#menu{
+    width: 25px;
+    margin-top: 35%;
+    cursor: pointer;
+    padding: 20%;
+    border-radius: 5%;
+   
+
+}
+#menu:hover{
+    background-color: #00c2ff;
+}
+.server{
+    width: 80%;
+    margin: 2em auto 2em 25% ;
+}
+h1{
+    font-size: 25px;
+
+}
+#subhead{
+    font-size:18px;
+    z-index: 10;
+    position: relative;
+
+}
+.blue-bg{
+    width: 100%;
+    background: #00c2ff;
+    color: #fff;
+    margin: 15% 0 15% 0;
+    padding: 4em 0 2em 0;
+    border-top-left-radius:5% ;
+    transform:skewY(-2deg);
+}
+.blue-bg:before{
+    content:"";
+    width: 40px;
+    height: 40px;
+    background-color: #00c2ff;
+    position: absolute;
+    top: -39px;
+    right: 0px;
+    z-index: 1;
+}
+.blue-bg::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    top: -80px;
+    right: 0px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+}
+
+.blue-bg ul{
+    transform: skewY(2deg);
+}
+.blue-bg ul li{
+    margin-bottom: 2em;
+}
+.blue-bg ul li p{
+    line-height: 26px;
+    padding: 0em 0.5em;
+}
+.blue-bg img{
+    width: 20%;
+}
+.blue-bg ul li:nth-child(3) img{
+    width: 13.4%;
+}
+.grey-bg{
+    background-color: rgba(207, 207, 207, 0.288);
+    padding: 4em 0 2em;
+    margin-top: -18%;
+}
+.grey-bg ul li:first-child{
+    margin-bottom: 2em;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+figcaption{
+    font-weight: bold;
+    color: #00c2ff;
+}
+h2{
+    margin-top: 10%;
+}
+.cta{
+    background: #00CC80;
+    width: calc(100% - 1em);
+    display: block;
+    color: #fff;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 40%;
+    position: relative;
+    z-index: 4;
+}
+.black{
+    width: 100%;
+    background-color: rgb(29, 26, 26);
+    color: #fff;
+    padding: 3em 0;
+    margin-top: -5em;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+
+}
+.black .container{
+    transform: skewY(-2deg);
+}
+.black:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: rgb(29, 26, 26);
+    position: absolute;
+    z-index:-2;
+    top:-39px;
+    left: 0px;
+}
+.black:after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    z-index:-1;
+    top:-80px;
+    left: 0px;
+    margin-bottom: -5em;}
+footer ul li a{
+    text-decoration: underline;
+    color: #fff;
+
+}
+footer ul li{
+    margin-top: 5em;
+    margin-bottom: -2em;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+#contact-info{
+font-weight: lighter;
+font-size: small;
+}
+nav ul{
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.87);
+    height: 100%;
+    z-index: 11;
+    padding-top: 5em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 2em 2em 2em 0.9em;
+    background-color: #7474745d;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+.exit-btn{
+   margin-bottom: 1em;
+   margin-top: -3em;
+   text-align: right;
+   padding: 0 1.4em;
+
+
+}
+.exit-btn img{
+    cursor: pointer;
+    width: 18px;
+    padding: 1em;
+}
+.exit-btn img:hover{
+    background-color: rgb(94, 91, 91);
+    border-radius: 50%;
+    
+    
+}
+
+@media only screen and (min-width:600px){
+     .server{
+        width: 60%;
+      }
+     h1{
+         font-size: 2em;
+         margin: 0;
+     }
+     #subhead{
+         font-size: 1.2em;
+         margin-bottom: 8%;
+        
+     }
+     .blue-bg{
+         margin: 0;
+         }
+         .blue-bg img{
+             width: 20%;
+             
+         }
+         .blue-bg ul li:nth-child(3) img{
+             width: 11%;
+             margin-top: -6px;
+         }
+         .blue-bg ul li:nth-child(2) img{
+            width: 25%;
+            margin-top: -3px;
+        }
+      
+         .blue-bg ul{
+             display: flex;
+             align-items: center;
+             margin-top: -1em;
+}
+         .blue-bg ul li{
+             margin-bottom: 0;
+         }
+         .blue-bg ul li p{
+             padding: 0.5em 1em;
+         }
+         .grey-bg ul{
+             display: flex;
+             justify-content: space-around;
+             margin-top: 18%;
+         }
+         .grey-bg ul li p{
+             padding: 0.5em 1em;
+             margin: 0;
+         }
+         nav ul{
+             width: 45%;
+         } 
+} 
+@media only screen and (min-width:875px)
+{
+    #subhead{
+        margin-bottom: 15%;
+    }
+    .blue-bg ul{
+        margin: 0 0 5% 0;
+    }
+    .grey-bg ul{
+        margin: 25% 0 5% 0;
+        padding: 2em 0 0 0;
+        
+    }
+}
+@media only screen and (min-width:1024px)
+{
+  .cta{
+      width: 50%;
+  }
+  .container{
+      width: 80%;
+      margin: 0 auto auto;
+      align-items: center;
+  }
+ 
+  .show-desktop{
+      display: block;
+      margin: 0 auto 13% auto;
+  }
+  .hide-desktop
+  {
+      display: none;
+
+  }
+  nav ul{
+      position: inherit;
+      width: auto;
+      background-color:none;
+      height: auto;
+      display: flex;
+      padding-top:0 ;
+
+
+  }
+  nav ul li {
+      float: left;
+
+  }
+  nav ul li a{
+      color: black;
+      background-color: inherit;
+      text-align: right;
+      padding: 0 1em 0 2em;
+     
+     
+  }
+  nav ul li a:hover{
+      background-color: inherit;
+      
+  }
+  .hide-mobile{
+      display: block;
+  }
+  .scroll{
+      margin-bottom:8% ;
+      margin-top: -3%;
+      width: 30px;
+      animation: move 1.3s infinite alternate-reverse;
+  }
+
+    @keyframes move{
+        0%{
+            transform: translateY(0px);
+        }
+       
+        100%{
+            transform: translateY(50px);
+        }
+      
+    }
+
+
+}
+
